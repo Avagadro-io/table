@@ -4,8 +4,8 @@ session_start();
 
 
 // define variables
-define('USERNAME', 'nurynazarow');
-define('PASSWORD', 'nury1819');
+define('USERNAME', 'dowlet');
+define('PASSWORD', 'oxford98');
 
 // Check if form was posted
 if ( $_SERVER['REQUEST_METHOD'] == 'POST') {
@@ -15,11 +15,10 @@ if ( $_SERVER['REQUEST_METHOD'] == 'POST') {
 
 	// validate the against records
 	if ( $username === USERNAME && $password === PASSWORD ) {
-		
 		$_SESSION['username'] = $username;
 		header("Location: /control/");
 	} else{
-		$status = "Incorrect Password or Username";
+		$status = "Ýalnys ulanyjy ady ýada açarsözi";
 	}
 
 }	
