@@ -15,10 +15,12 @@ require 'models/logs/login.php';
 // Functions
 require 'models/database/db.php';
 
-// Routes
-require 'models/routes/route.php';
-
 // Database Connection
 require 'models/database/connect.php';
+
+// Routes
+require 'models/routes/route.php';  
+
+
 
  
