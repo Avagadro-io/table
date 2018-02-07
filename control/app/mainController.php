@@ -10,7 +10,7 @@
 *************************************************************************************************************************************/
 
 // Login Control
-require 'models/logs/login.php';
+require 'loginController.php';
 
 // Functions
 require 'models/database/db.php';
@@ -20,7 +20,5 @@ require 'models/database/connect.php';
 
 // Routes
 require 'models/routes/route.php';  
-
-
 
  

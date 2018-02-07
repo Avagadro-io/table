@@ -1,6 +1,6 @@
 <?php 
-session_start();
 // Start the session
+session_start();
 
 
 // define variables
@@ -17,7 +17,7 @@ if ( $_SERVER['REQUEST_METHOD'] == 'POST') {
 	if ( $username === USERNAME && $password === PASSWORD ) {
 		
 		$_SESSION['username'] = $username;
-		header("Location: ../");
+		header("Location: /control/");
 	} else{
 		$status = "Incorrect Password or Username";
 	}
