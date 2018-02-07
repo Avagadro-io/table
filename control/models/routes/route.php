@@ -6,12 +6,10 @@
 *
 *****************************************************************************/
 
-
 if (isset($_GET['register'])) {
-	return require 'models/pages/reg/reg.php';
+	require 'models/pages/reg/reg.php';
+} elseif (isset($_GET['erase'])) {
+	require 'models/pages/erase/erase.php';
+} else{
+	require 'models/pages/main/main.php';
 }
-if (isset($_GET['erase'])) {
-	return require 'models/pages/erase/erase.php';
-}
-
-return require 'models/pages/main/main.php';

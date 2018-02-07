@@ -49,39 +49,19 @@
             <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
               <div class="menu_section">
                 <ul class="nav side-menu">
-                  <li><a><i class="fa fa-home"></i> Yarysh Rejesi <span class="fa fa-chevron-down"></span></a>
+                  <li><a><i class="fa fa-home"></i> Yaryş Rejesi <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
-                      <li><a href="?main">Gosh</a></li>
+                      <li><a href="?main">Goş</a></li>
                     </ul>
                   </li>
-                  <li><a><i class="fa fa-edit"></i>	Sertifikatlar <span class="fa fa-chevron-down"></span></a>
+                  <li><a><i class="fa fa-edit"></i>	Taze adam goş <span class="fa fa-chevron-down"></span></a>
                   	<ul class="nav child_menu">
-                      <li><a href="http://localhost:8888/admin/pages/about/add/">Gosh</a></li>
-                      <li><a href="http://localhost:8888/admin/pages/about/delete/">Poz</a></li>
+                      <li><a href="?register">Goş</a></li>
                     </ul>
                   </li>
-                  <li><a><i class="fa fa-desktop"></i> Corparate <span class="fa fa-chevron-down"></span></a>
+                  <li><a><i class="fa fa-desktop"></i> Hepdenäni täzele <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
-                      <li><a href="http://localhost:8888/admin/pages/serwisler/add/">Uytget</a></li>
-                      <!-- <li><a href="http://localhost:8888/admin/pages/serwisler/delete/">Poz</a></li> -->
-                    </ul>
-                  </li>
-                  <li><a><i class="fa fa-table"></i> Onimler <span class="fa fa-chevron-down"></span></a>
-                    <ul class="nav child_menu">
-                      <li><a href="http://localhost:8888/admin/pages/products/add/">Onim Gosh</a></li>
-                      <li><a href="http://localhost:8888/admin/pages/products/delete/">Onimi Poz</a></li>
-                    </ul>
-                  </li>
-                  <li><a><i class="fa fa-bar-chart-o"></i> Blog <span class="fa fa-chevron-down"></span></a>
-                    <ul class="nav child_menu">
-                      <li><a href="http://localhost:8888/admin/pages/blogs/add/">Blog Gosh</a></li>
-                      <li><a href="http://localhost:8888/admin/pages/blogs/delete/">Blog Poz</a></li>
-                    </ul>
-                  </li>
-                  <li><a><i class="fa fa-fax"></i> Contact Bagly <span class="fa fa-chevron-down"></span></a>
-                    <ul class="nav child_menu">
-                      <li><a href="http://localhost:8888/admin/pages/contact/contact/">Contact</a></li>
-                      <li><a href="http://localhost:8888/admin/pages/contact/footer/">Footer</a></li>
+                      <li><a href="?erase">Täzele</a></li>
                     </ul>
                   </li>
                 </ul>
@@ -90,54 +70,3 @@
 
             </div>
             <!-- /sidebar menu -->
-
-            <!-- /menu footer buttons -->
-            <div class="sidebar-footer hidden-small">
-              <a data-toggle="tooltip" data-placement="top" title="Dev bilen habarlas">
-                <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
-              </a>
-              <a data-toggle="tooltip" data-placement="top" title="Donate Et :)">
-                <span class="glyphicon glyphicon-usd" aria-hidden="true"></span>
-              </a>
-              <a data-toggle="tooltip" data-placement="top" title="Tazele">
-                <span class="glyphicon glyphicon-refresh" aria-hidden="true"></span>
-              </a>
-              <a data-toggle="tooltip" data-placement="top" title="Jyrjak" href="login.html">
-                <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
-              </a>
-            </div>
-            <!-- /menu footer buttons -->
-          </div>
-        </div>
-
-        <!-- top navigation -->
-        <div class="top_nav">
-          <div class="nav_menu">
-            <nav>
-              <div class="nav toggle">
-                <a id="menu_toggle"><i class="fa fa-bars"></i></a>
-              </div>
-
-              <ul class="nav navbar-nav navbar-right">
-                <li class="">
-                  <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                    <img src="images/img.jpg" alt="">Nury Admin
-                    <span class=" fa fa-angle-down"></span>
-                  </a>
-                  <ul class="dropdown-menu dropdown-usermenu pull-right">
-                    <li><a href="javascript:;"> Profilim</a></li>
-                    <li><a href="javascript:;">Komek</a></li>
-                    <li><a href="http://localhost:8888/admin/logs/logout.php"><i class="fa fa-sign-out pull-right"></i> Jyrjak</a></li>
-                  </ul>
-                </li>
-
-                <li role="presentation" class="dropdown">
-                  <a href="javascript:;" class="dropdown-toggle info-number" data-toggle="dropdown" aria-expanded="false">
-                    <i class="fa fa-envelope-o"></i>
-                  </a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-        </div>
-        <!-- /top navigation -->
