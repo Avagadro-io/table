@@ -1,3 +1,3 @@
 <?php 
 
-require 'models/mainController/mainController.php';
+require 'mainController/mainController.php';
