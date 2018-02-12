@@ -53,15 +53,22 @@ function get_my($tableName, $conn){
 	}
 }
 
+function getBigToSmall($tableName, $title, $conn) {
+	try{
+		$result =  $conn->query("SELECT * FROM $tableName ORDER BY CAST(`$title` AS SIGNED) DESC");
+		
+		return ( $result->rowCount() > 0 ) 
+		? $result
+		: false;
+	}
+	catch(Exception $e){
+		return false;
+	}
+}
+
 function get_by_id($table_name, $id, $conn)
 {
 	 $query = query("select * from $table_name where id = :id", ['id' => $id], $conn);
 
 	if ( $query ) return $query->fetchAll();
-}
-
-function get_byId($id, $conn){
-	$query = query("select * from posts where id = :id", ['id' => $id], $conn);
-
-	if ( $query ) return $query->fetchAll();	
 }

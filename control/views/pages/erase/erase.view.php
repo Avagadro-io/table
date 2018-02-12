@@ -14,23 +14,12 @@ body{ font-family: "Ubuntu",sans-serif; }
 </style>
 <div class="inner-content">
 	<div style="height: 45px;"></div>
+	<form action="" method="POST">
+		<h1 align="center">Täzele</h1>
+		<br>
+		<input type="submit" id="submit" name="submit" class="btn btn-danger" style="float: right;">
+	</form>
 	
-	<form action="" method="POST">
-		<h2>Okuwçy Poz</h2>
-			<select name="student_list" class="form-control">
-				<?php foreach ($posts as $post): ?>
-						<option value="<?= $post['fullName'] ?>"></option>
-						<input type="hidden" name="id" value="<?= $id ?>">
-				<?php endforeach ?>
-			</select>
-		<input type="submit" name="student_e" class="btn btn-primary" style="margin-top: 20px; float: right;" value="Poz">
-	</form>
-
-	<form action="" method="POST">
-		<h2>Hepdäni täzele</h2>
-		<input type="submit" name="full_w" class="btn btn-primary" style="margin-top: 20px; float: right;" value="Goş">
-	</form>
-
 	<?php if (isset($message)): ?>
 		<div class="alert alert-success alert-dismissible fade in" role="alert" id="alerted-message">
             <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span>

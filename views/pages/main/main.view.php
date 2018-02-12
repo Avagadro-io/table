@@ -1,6 +1,6 @@
 <?php require_once 'views/partials/header.view.php' ?>
 <!-- Page Content -->
-	 <section>
+	  <section>
         <div class="container">
             <table>
                 <thead>
@@ -18,29 +18,47 @@
                         <th class="status">Status</th>
                     </tr>
                 </thead>
-                <tbody>
 
-                <?php if (isset($posts)): ?>
-                    <?php foreach ($posts as $post): ?>        
-                        <tr>
-                            <td><?= $post['id'] ?></td>
-                            <td class="name"><?= $post['name'] ?> <?= $post['surname'] ?></td>
-                            <td><?= $post['dayOne'] ?></td>
-                            <td><?= $post['dayTwo'] ?></td>
-                            <td><?= $post['dayThree'] ?></td>
-                            <td><?= $post['dayFour'] ?></td>
-                            <td><?= $post['dayFive'] ?></td>
-                            <td><?= $post['daySixx'] ?></td>
-                            <td><?= $post['daySeven'] ?></td>
-                            <td><?= $someOf_Days ?></td>
-                            <td><?= $status ?></td>
-                        </tr>
-                    <?php endforeach ?>
+                <tbody>
+                <?php foreach ($myPosts as $postlar): ?>
+                    <tr>
+                        <td><?= $num++ ?></td>
+                        <td class="name"><?= $postlar['fullName'] ?></td>
+                        <td><?= $postlar['dayOne'] ?></td>
+                        <td><?= $postlar['dayTwo'] ?></td>
+                        <td><?= $postlar['dayThree'] ?></td>
+                        <td><?= $postlar['dayFour'] ?></td>
+                        <td><?= $postlar['dayFive'] ?></td>
+                        <td><?= $postlar['daySix'] ?></td>
+                        <td><?= $postlar['daySeven'] ?></td>
+                        <td><?= $postlar['sum'] ?></td>
+                        <?php if ($postlar['current'] > $postlar['prev']) {
+                                $whichOne = 'fa-arrow-up';
+                                $postStatus = 'green';
+                            } elseif ($postlar['current'] == $postlar['prev']) { 
+                                $whichOne = 'fa-wifi';
+                                $postStatus = 'blue';
+                            } else{
+                                $whichOne = 'fa-arrow-down';
+                                $postStatus = 'red';
+                            }   
+                        ?>
+                        <td><i class="fa <?= $whichOne ?> status-ic-<?= $postStatus ?>"></i></td>
+                    </tr>
+                <?php if ($postlar['prev'] !== $postlar['current']) :?>
+                    <?php query("UPDATE users SET prev = :prev, current = :current WHERE id = :id", [
+                        'prev'      => $postlar['prev'],
+                        'current'   => $postlar['current'],
+                        'id'        => $id
+                        ], $conn) ?>
                 <?php endif ?>
+                <?php endforeach ?>
                 </tbody>
             </table>
         </div>
     </section>
+
+
     <div class="space-50" style="height: 50px;"></div>
 <!-- Page Content/ -->
 <?php require_once 'views/partials/footer.view.php' ?>

@@ -28,7 +28,6 @@
 					<input type="hidden" name="id" value="<?= $post['id'] ?>">
 					
 					<h2>Ady: <?= $post['fullName'] ?></h2>
-					<input type="hidden" name="fullName" value="<?= $post['fullName'] ?>">
 				  	<label for="book_n">Sahypa: </label>
 				  	<input type="number" name="book_n" id="book_n" class="form-control" required="required">
 					<input type="submit" style="margin-top: 20px; float: right;" class="btn btn-primary" value="Sahypany Gosh">

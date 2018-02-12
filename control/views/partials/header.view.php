@@ -13,6 +13,7 @@
     <link href="views/assets/templ/bower_components/gentelella/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
     <script src="https://use.fontawesome.com/6af331246b.js"></script>
+    <link href="/views/assets/css/font-awesome.min.css" rel="stylesheet">
     <!-- iCheck -->
     <link href="views/assets/templ/bower_components/gentelella/vendors/iCheck/skins/flat/green.css" rel="stylesheet">
 
