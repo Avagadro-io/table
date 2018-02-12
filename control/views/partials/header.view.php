@@ -19,7 +19,8 @@
 
     <!-- Custom Theme Style -->
     <link href="views/assets/templ/bower_components/gentelella/build/css/custom.min.css" rel="stylesheet">
-  </head>
+    <style>@import url('https://fonts.googleapis.com/css?family=Ubuntu');</style>
+ </head>
 
   <body class="nav-md">
     <div class="container body">
