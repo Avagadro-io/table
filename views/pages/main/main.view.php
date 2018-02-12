@@ -20,7 +20,8 @@
                 </thead>
 
                 <tbody>
-                <?php foreach ($myPosts as $postlar): ?>
+<?php if (is_array($posts) || is_object($posts)): ?>
+               <?php foreach ($myPosts as $postlar): ?>
                     <tr>
                         <td><?= $num++ ?></td>
                         <td class="name"><?= $postlar['fullName'] ?></td>
@@ -53,7 +54,10 @@
                         ], $conn) ?>
                 <?php endif ?>
                 <?php endforeach ?>
-                </tbody>
+            <?php else :?>
+                <h1 style="color: #fff; font-family: Ubuntu;">Dost Adam Yoga Okayan</h1>
+            <?php endif ?>  
+            </tbody>
             </table>
         </div>
     </section>

@@ -14,6 +14,7 @@
 </style>
 	<div class="inner-content">
 		<div style="height: 45px;"></div>
+<?php if (is_array($posts) || is_object($posts)): ?>
 			<?php foreach ($posts as $post): ?>
 				<form action="" method="POST">
 					<select class="form-control" name="day">
@@ -34,6 +35,9 @@
 				</form>	
 				<hr>
 			<?php endforeach ?>
+			<?php else :?>
+				<h1>Dost Adam Registrasiya Etmesen Adam Yok</h1>
+			<?php endif ?>
 			<?php if (isset($message)): ?>
 				<div class="alert alert-success alert-dismissible fade in" role="alert" id="alerted-message">
                     <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span>
