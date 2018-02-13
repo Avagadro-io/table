@@ -63,9 +63,10 @@
                   </li>
                   <li><a><i class="fa fa-desktop"></i> Hepdenäni täzele <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
-                      <li><a href="?erase">Täzele</a></li>
+                     <li><a href="?erase">Täzele</a></li>
                     </ul>
                   </li>
+                  <li><a href="?logout"><i class="fa fa-sign-out"></i> Jyrjak <span class="fa fa-chevron-right"></span></a></li>
                 </ul>
               </div>
               
