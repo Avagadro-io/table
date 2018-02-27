@@ -10,7 +10,7 @@
 *************************************************************************************************************************************/
 
 // Login Control
-require 'loginController.php';
+//require 'loginController.php';
 
 // Functions
 require 'models/database/db.php';
