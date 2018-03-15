@@ -37,7 +37,7 @@
                                 $whichOne = 'fa-arrow-up';
                                 $postStatus = 'green';
                             } elseif ($postlar['current'] == $postlar['prev']) { 
-                                $whichOne = 'fa-wifi';
+                                $whichOne = 'fa-circle-o-notch';
                                 $postStatus = 'blue';
                             } else{
                                 $whichOne = 'fa-arrow-down';

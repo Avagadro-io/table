@@ -67,6 +67,7 @@
                     </ul>
                   </li>
                   <li><a href="?logout"><i class="fa fa-sign-out"></i> Jyrjak <span class="fa fa-chevron-right"></span></a></li>
+                  <li><a href="/"><i class="fa fa-home"></i> Go main page <span class="fa fa-chevron-right"></span></a></li>
                 </ul>
               </div>
               

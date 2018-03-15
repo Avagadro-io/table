@@ -4,8 +4,8 @@ session_start();
 
 
 // define variables
-define('USERNAME', 'dowlet');
-define('PASSWORD', 'oxford98');
+define('USERNAME', 'admin');
+define('PASSWORD', 'admin');
 
 // Check if form was posted
 if ( $_SERVER['REQUEST_METHOD'] == 'POST') {

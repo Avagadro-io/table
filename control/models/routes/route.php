@@ -11,7 +11,7 @@ if (isset($_GET['register'])) {
 } elseif (isset($_GET['erase'])) {
 	require 'models/pages/erase/erase.php';
 } elseif (isset($_GET['logout'])) {
-	return header("Location: models/logs/logout.php");	
+	header("Location: models/logs/logout.php");	
 } else{
 	require 'models/pages/main/main.php';
 }

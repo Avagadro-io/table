@@ -8,8 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Nurmuhammet Allanov">
     <!-- Shorcut Icon -->
-    <link rel="apple-touch-icon" href="views/assets/img/ap.png">
-    <link rel="shortcut icon" href="views/assets/img/ap.png">
+    <!-- <link rel="apple-touch-icon" href="views/assets/img/ap.png"> -->
+    <!-- <link rel="shortcut icon" href="views/assets/img/ap.png"> -->
 
     <title>Table</title>
 
